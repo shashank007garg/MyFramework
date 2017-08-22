@@ -1,0 +1,23 @@
+2017-08-17 22:02:25 INFO  TC001_VerifyLoginWithInvalidCredentials:25 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-17 22:02:28 INFO  HomePage:37 - clickon sigin button[[ChromeDriver: chrome on XP (a2603d9ad59ba08469a02ffdbad4f0c2)] -> xpath: //*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2017-08-17 22:02:28 INFO  HomePage:39 - enter email adderess[[ChromeDriver: chrome on XP (a2603d9ad59ba08469a02ffdbad4f0c2)] -> xpath: //*[@id='email']]
+2017-08-17 22:02:28 INFO  HomePage:41 - enter password[[ChromeDriver: chrome on XP (a2603d9ad59ba08469a02ffdbad4f0c2)] -> xpath: //*[@id='passwd']]
+2017-08-17 22:02:29 INFO  HomePage:43 - clickon submit button[[ChromeDriver: chrome on XP (a2603d9ad59ba08469a02ffdbad4f0c2)] -> id: SubmitLogin]
+2017-08-17 22:02:29 INFO  HomePage:47 - error message isAuthentication failed.
+2017-08-17 22:02:29 INFO  TC001_VerifyLoginWithInvalidCredentials:30 - ----Finished VerifyLoginWithInvalidCredentials  Test
+2017-08-18 21:56:42 INFO  TestBase:23 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-18 22:21:02 INFO  TestBase:22 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-18 22:22:42 INFO  TestBase:22 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 13:54:42 INFO  TestBase:22 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:03:33 INFO  TestBase:24 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:16:49 INFO  TestBase:24 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:24:08 INFO  TestBase:24 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:30:57 INFO  TestBase:26 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:32:38 INFO  TestBase:26 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:36:14 INFO  TestBase:26 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:38:50 INFO  TestBase:26 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:43:53 INFO  TestBase:26 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-19 14:45:56 INFO  TestBase:26 - ----Starting VerifyLoginWithInvalidCredentials  Test
+2017-08-20 15:21:09 INFO  TestBase:25 - ----Starting registration page
+2017-08-20 15:32:03 INFO  TestBase:25 - ----Starting registration page
+2017-08-20 15:37:46 INFO  TestBase:25 - ----Starting registration page
