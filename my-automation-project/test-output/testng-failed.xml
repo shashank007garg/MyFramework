@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Default suite]">
-  <test name="Default test(failed)" preserve-order="false">
+<suite verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="com.test.automation.uiAutomation.customListener.Listener"/>
+    <listener class-name="com.test.automation.uiAutomation.customListener.RetryListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="classes" preserve-order="false">
     <classes>
+      <class name="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart">
+        <methods>
+          <include name="verifyAddToCart"/>
+          <include name="setUp"/>
+          <include name="endTest"/>
+        </methods>
+      </class>
       <class name="com.test.automation.uiAutomation.registrationPage.TC003_VerifyLoginWithDifferentData">
         <methods>
           <include name="endTest"/>

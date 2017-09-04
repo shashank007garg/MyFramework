@@ -1,19 +1,24 @@
 package com.test.automation.uiAutomation.uiActions;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials;
+import com.test.automation.uiAutomation.testBase.TestBase;
 
-public class HomePage {
+public class HomePage extends TestBase{
 
+	
+	
 	public static final Logger log=Logger.getLogger(HomePage.class.getName());
 	WebDriver driver;
 
 	public HomePage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -47,4 +52,43 @@ public class HomePage {
 		log.info("error message is"+authenticationFailed.getText());
 		return authenticationFailed.getText();
 	}
+	
+	public void clickOnNavigation(String name){
+		
+	}
+	
+public void clickOnWomenNavigationMenu(String subName) throws InterruptedException {
+		
+//		System.out.println(firstPosition);
+//		System.out.println(secondPosition);
+	//*[@id='block_top_menu']/ul/child::li/a[contains(text(),'T-shirts')]
+		Actions action=new Actions(driver);
+		WebElement menu=driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/a"));
+		action.moveToElement(menu).build().perform();
+		
+		Thread.sleep(3000);
+		
+		WebElement subMenu=driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li[1]/ul/child::li/child::a[contains(text(),'"+subName+"')]"));
+		action.moveToElement(subMenu).click().perform();
+		Thread.sleep(3000);
+		
+	}
+	
+	public void clickOnDressNavigationMenu(String subName) throws InterruptedException {
+		
+//		System.out.println(firstPosition);
+//		System.out.println(secondPosition);
+		Actions action=new Actions(driver);
+		WebElement menu=driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li[2]/a"));
+		action.moveToElement(menu).build().perform();
+		
+		Thread.sleep(3000);
+		
+		WebElement subMenu=driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li[2]/ul/child::li/child::a[contains(text(),'"+subName+"')]"));
+		action.moveToElement(subMenu).click().perform();
+		Thread.sleep(3000);
+		
+	}
+	
+	
 }

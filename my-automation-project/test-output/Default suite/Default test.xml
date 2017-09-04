@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Shruti" name="com.test.automation.uiAutomation.registrationPage.TC003_VerifyLoginWithDifferentData" tests="4" failures="0" timestamp="22 Aug 2017 16:56:45 GMT" time="34.37" errors="0">
-  <testcase name="verifyLoginData" time="6.519" classname="com.test.automation.uiAutomation.registrationPage.TC003_VerifyLoginWithDifferentData"/>
-  <testcase name="verifyLoginData" time="6.217" classname="com.test.automation.uiAutomation.registrationPage.TC003_VerifyLoginWithDifferentData"/>
-  <testcase name="verifyLoginData" time="0.001" classname="com.test.automation.uiAutomation.registrationPage.TC003_VerifyLoginWithDifferentData">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyLoginData" time="0.001" classname="com.test.automation.uiAutomation.registrationPage.TC003_VerifyLoginWithDifferentData">
-    <skipped/>
-  </testcase>
+<testsuite hostname="Shruti" name="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart" tests="1" failures="0" timestamp="4 Sep 2017 15:20:43 GMT" time="64.284" errors="0">
+  <testcase name="verifyAddToCart" time="26.432" classname="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart"/>
 </testsuite>

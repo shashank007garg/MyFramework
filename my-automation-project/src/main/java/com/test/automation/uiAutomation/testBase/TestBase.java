@@ -1,9 +1,13 @@
 package com.test.automation.uiAutomation.testBase;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -19,22 +23,33 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import com.test.automation.uiAutomation.customListener.Listener;
 import com.test.automation.uiAutomation.excelReader.Excel_Reader;
 
 public class TestBase {
 
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 
-	public WebDriver driver;
-	String url = "http://automationpractice.com/index.php";
-	String browser = "chrome";
+	public static WebDriver driver;
+	//String url = "http://automationpractice.com/index.php";
+	//String browser = "chrome";
 	Excel_Reader reader;
+	Properties OR;
 
-	public void init() {
-		selectBrowser(browser);
-		getUrl(url);
+	public void init() throws IOException {
+		loadData();
+		selectBrowser(OR.getProperty("browser"));
+		getUrl(OR.getProperty("url"));
 		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
+	}
+	public void loadData() throws IOException {
+		OR = new Properties();
+		FileInputStream file = new FileInputStream(
+				System.getProperty("user.dir")
+						+ "\\src\\main\\java\\com\\test\\automation\\uiAutomation\\config\\config.properties");
+
+		OR.load(file);
 	}
 
 	public void selectBrowser(String browser) {
@@ -48,6 +63,8 @@ public class TestBase {
 					"drivers/geckodriver.exe");
 			log.info("creating object of " + browser);
 			driver = new FirefoxDriver();
+			
+			
 		}
 	}
 
@@ -86,11 +103,23 @@ public class TestBase {
 			File destFile = new File((String) reportDirectory + name + "_"
 					+ formater.format(calendar.getTime()) + ".png");
 			FileUtils.copyFile(srcfile, destFile);
-			Reporter.log("<a href='"+destFile.getAbsolutePath()+ "'> <img src='"+destFile.getAbsolutePath()+"' height='100' width='100'/></a>");
-			
+			Reporter.log("<a href='" + destFile.getAbsolutePath()
+					+ "'> <img src='" + destFile.getAbsolutePath()
+					+ "' height='100' width='100'/></a>");
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
+	}
+
+	public void closeBrowser() {
+		driver.quit();
+	}
+
+	public Iterator<String> getAllWindows() {
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> Iterator = window.iterator();
+		return Iterator;
 	}
 }

@@ -21,3 +21,7 @@
 2017-08-20 15:21:09 INFO  TestBase:25 - ----Starting registration page
 2017-08-20 15:32:03 INFO  TestBase:25 - ----Starting registration page
 2017-08-20 15:37:46 INFO  TestBase:25 - ----Starting registration page
+2017-08-30 22:48:03 INFO  TestBase:48 - creating object of chrome
+2017-08-30 22:48:06 INFO  TestBase:59 - navigating tohttp://automationpractice.com/index.php
+2017-08-30 22:57:13 INFO  TestBase:48 - creating object of chrome
+2017-08-30 22:57:15 INFO  TestBase:59 - navigating tohttp://automationpractice.com/index.php

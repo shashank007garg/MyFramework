@@ -1,5 +1,7 @@
 package com.test.automation.uiAutomation.homepage;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -15,7 +17,7 @@ public class TC001_VerifyLoginWithInvalidCredentials extends TestBase {
 	HomePage homepage;
 
 	@BeforeTest
-	public void setUp() {
+	public void setUp() throws IOException {
 
 		init();
 	}

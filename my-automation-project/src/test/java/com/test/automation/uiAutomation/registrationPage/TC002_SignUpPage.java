@@ -1,5 +1,7 @@
 package com.test.automation.uiAutomation.registrationPage;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -13,7 +15,7 @@ public class TC002_SignUpPage extends TestBase {
 	SignUp signup;
 
 	@BeforeTest
-	public void setUp() {
+	public void setUp() throws IOException {
 
 		init();
 	}

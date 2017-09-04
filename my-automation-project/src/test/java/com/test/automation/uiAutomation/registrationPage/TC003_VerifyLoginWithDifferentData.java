@@ -1,7 +1,8 @@
 package com.test.automation.uiAutomation.registrationPage;
 
-import org.testng.Assert;
+import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -23,7 +24,7 @@ public class TC003_VerifyLoginWithDifferentData extends TestBase{
 		return testRecords;
 	}
 	@BeforeTest
-	public void setUp() {
+	public void setUp() throws IOException {
 
 		init();
 	}

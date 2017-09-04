@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Shruti" name="com.test.automation.uiAutomation.registrationPage.TC002_SignUpPage" tests="1" failures="0" timestamp="20 Aug 2017 10:07:57 GMT" time="28.23" errors="0">
-  <testcase name="signUpPage" time="9.756" classname="com.test.automation.uiAutomation.registrationPage.TC002_SignUpPage"/>
+<testsuite hostname="Shruti" name="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart" tests="1" failures="0" timestamp="4 Sep 2017 15:23:42 GMT" time="65.872" errors="0">
+  <testcase name="verifyAddToCart" time="38.476" classname="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart"/>
 </testsuite>
