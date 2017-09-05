@@ -22,7 +22,7 @@ public class TC005_VerifyAddToCart extends TestBase {
 	ProductDetailsPage productdetailspage;
 	AddToCartPage addtocartpage;
 
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws IOException {
 
 		init();
