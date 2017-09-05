@@ -51,8 +51,5 @@ public class TC005_VerifyAddToCart extends TestBase {
 
 	}
 
-	@AfterTest
-	public void endTest() {
-		closeBrowser();
-	}
+	
 }
