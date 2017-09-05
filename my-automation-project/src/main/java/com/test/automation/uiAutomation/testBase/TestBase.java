@@ -3,6 +3,7 @@ package com.test.automation.uiAutomation.testBase;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Iterator;
@@ -35,9 +36,16 @@ public class TestBase {
 	//String browser = "chrome";
 	Excel_Reader reader;
 	Properties OR;
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public ITestResult result;
 
 	public void init() throws IOException {
 		loadData();
+		extent = new ExtentReports(
+				System.getProperty("user.dir")
+						+ "\\src\\main\\java\\com\\test\\automation\\uiAutomation\\report\\test.html",
+				false);
 		selectBrowser(OR.getProperty("browser"));
 		getUrl(OR.getProperty("url"));
 		String log4jConfPath = "log4j.properties";
@@ -115,11 +123,75 @@ public class TestBase {
 
 	public void closeBrowser() {
 		driver.quit();
+		extent.endTest(test);
+		extent.flush();
 	}
 
 	public Iterator<String> getAllWindows() {
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> Iterator = window.iterator();
 		return Iterator;
+	}
+	
+	public void getResult(ITestResult result) {
+		if (result.getStatus() == ITestResult.SUCCESS) {
+			test.log(LogStatus.PASS, result.getName() + "test is pass");
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			test.log(LogStatus.SKIP, result.getName()
+					+ "test is skip and skip reason is" + result.getThrowable());
+		}
+
+		else if (result.getStatus() == ITestResult.FAILURE) {
+			test.log(LogStatus.FAIL, test.addScreenCapture(captureScreen("")));
+		}
+
+		else if (result.getStatus() == ITestResult.STARTED) {
+			test.log(LogStatus.INFO, result.getName() + "test is started");
+		}
+	}
+
+	private String captureScreen(String fileName) {
+		if(fileName==""){
+			fileName="blank";
+		}
+		File destFile =null;
+		Calendar calendar = Calendar.getInstance();
+		SimpleDateFormat formater = new SimpleDateFormat("dd_mm_yyyy_hh_mm_ss");
+
+		File srcfile = ((TakesScreenshot) driver)
+				.getScreenshotAs(OutputType.FILE);
+		try {
+			String reportDirectory = new File(System.getProperty("user.dir"))
+					.getAbsolutePath()
+					+ "\\src\\main\\java\\com\\test\\automation\\uiAutomation\\screenshot\\";
+			 destFile = new File((String) reportDirectory + fileName + "_"
+					+ formater.format(calendar.getTime()) + ".png");
+			FileUtils.copyFile(srcfile, destFile);
+			Reporter.log("<a href='" + destFile.getAbsolutePath()
+					+ "'> <img src='" + destFile.getAbsolutePath()
+					+ "' height='100' width='100'/></a>");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return destFile.toString();
+		
+		
+	}
+	
+	@BeforeMethod()
+	public void beforeMethod(Method  method){
+		test=extent.startTest(method.getName());
+		test.log(LogStatus.INFO, method.getName()+"test Started");
+	}
+	
+	@AfterMethod()
+	public void afterMethod(ITestResult result){
+		getResult(result);
+	}
+	
+	@AfterClass(alwaysRun=true)
+	public void endTest(){
+		closeBrowser();
 	}
 }
