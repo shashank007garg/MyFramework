@@ -6,8 +6,9 @@ import java.util.Set;
 
 import junit.framework.Assert;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+
+import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
 
 import com.test.automation.uiAutomation.constants.IPProps.DetailsPage;
