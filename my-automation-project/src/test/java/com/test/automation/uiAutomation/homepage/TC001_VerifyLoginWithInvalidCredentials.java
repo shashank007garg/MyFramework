@@ -4,8 +4,7 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.test.automation.uiAutomation.testBase.TestBase;
@@ -16,7 +15,7 @@ public class TC001_VerifyLoginWithInvalidCredentials extends TestBase {
 	
 	HomePage homepage;
 
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws IOException {
 
 		init();
@@ -32,8 +31,5 @@ public class TC001_VerifyLoginWithInvalidCredentials extends TestBase {
 		log.info("----Finished VerifyLoginWithInvalidCredentials  Test");
 	}
 
-	@AfterClass
-	public void endTest() {
-		driver.close();
-	}
+	
 }

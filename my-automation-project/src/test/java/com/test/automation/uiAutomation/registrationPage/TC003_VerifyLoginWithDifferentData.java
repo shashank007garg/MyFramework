@@ -4,8 +4,7 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -23,7 +22,7 @@ public class TC003_VerifyLoginWithDifferentData extends TestBase{
 		String[][] testRecords = getData("LoginTest","Login.xlsx");
 		return testRecords;
 	}
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws IOException {
 
 		init();
@@ -45,9 +44,6 @@ public class TC003_VerifyLoginWithDifferentData extends TestBase{
 		
 	}
 	
-	@AfterTest
-	public void endTest() {
-		driver.close();
-	}
+	
 	
 }

@@ -1,11 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyAddToCart_06_40_2017_09_40_59.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyAddToCart_06_40_2017_09_40_59.png' height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyLoginWithInvalidCredentials_06_41_2017_09_41_25.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyLoginWithInvalidCredentials_06_41_2017_09_41_25.png' height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\navigationTest_06_41_2017_09_41_59.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\navigationTest_06_41_2017_09_41_59.png' height='100' width='100'/></a>]]>
+    </line>
   </reporter-output>
-  <suite name="com.test.common.BaseTest" duration-ms="7" started-at="2017-08-16T15:09:49Z" finished-at="2017-08-16T15:09:49Z">
+  <suite name="Suite" duration-ms="109318" started-at="2017-09-06T16:10:11Z" finished-at="2017-09-06T16:12:00Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="7" started-at="2017-08-16T15:09:49Z" finished-at="2017-08-16T15:09:49Z">
-    </test> <!-- Command line test -->
-  </suite> <!-- com.test.common.BaseTest -->
+    <test name="Test" duration-ms="109318" started-at="2017-09-06T16:10:11Z" finished-at="2017-09-06T16:12:00Z">
+      <class name="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart@6cc4c815]" name="setUp" is-config="true" duration-ms="26268" started-at="2017-09-06T21:40:11Z" finished-at="2017-09-06T21:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart@6cc4c815]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2017-09-06T21:40:37Z" finished-at="2017-09-06T21:40:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart.verifyAddToCart() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyAddToCart()[pri:0, instance:com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart@6cc4c815]" name="verifyAddToCart" duration-ms="22211" started-at="2017-09-06T21:40:37Z" finished-at="2017-09-06T21:40:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyAddToCart_06_40_2017_09_40_59.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyAddToCart_06_40_2017_09_40_59.png' height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart@6cc4c815]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-09-06T21:41:00Z" finished-at="2017-09-06T21:41:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddToCart status=SUCCESS method=TC005_VerifyAddToCart.verifyAddToCart()[pri:0, instance:com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart@6cc4c815] output=<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyAddToCart_06_40_2017_09_40_59.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyAddToCart_06_40_2017_09_40_59.png' height='100' width='100'/></a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart@6cc4c815]" name="endTest" is-config="true" duration-ms="1676" started-at="2017-09-06T21:41:00Z" finished-at="2017-09-06T21:41:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart -->
+      <class name="com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage@5ae9a829]" name="setUp" is-config="true" duration-ms="19307" started-at="2017-09-06T21:41:27Z" finished-at="2017-09-06T21:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage@5ae9a829]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-09-06T21:41:46Z" finished-at="2017-09-06T21:41:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage.navigationTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="navigationTest()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage@5ae9a829]" name="navigationTest" duration-ms="12181" started-at="2017-09-06T21:41:46Z" finished-at="2017-09-06T21:41:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\navigationTest_06_41_2017_09_41_59.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\navigationTest_06_41_2017_09_41_59.png' height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- navigationTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage@5ae9a829]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-06T21:41:59Z" finished-at="2017-09-06T21:41:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigationTest status=SUCCESS method=TC004_VerifyNavigationPage.navigationTest()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage@5ae9a829] output=<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\navigationTest_06_41_2017_09_41_59.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\navigationTest_06_41_2017_09_41_59.png' height='100' width='100'/></a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage@5ae9a829]" name="endTest" is-config="true" duration-ms="994" started-at="2017-09-06T21:41:59Z" finished-at="2017-09-06T21:42:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage -->
+      <class name="com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials@3a82f6ef]" name="setUp" is-config="true" duration-ms="19555" started-at="2017-09-06T21:41:01Z" finished-at="2017-09-06T21:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials@3a82f6ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-06T21:41:21Z" finished-at="2017-09-06T21:41:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials.verifyLoginWithInvalidCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyLoginWithInvalidCredentials()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials@3a82f6ef]" name="verifyLoginWithInvalidCredentials" duration-ms="4634" started-at="2017-09-06T21:41:21Z" finished-at="2017-09-06T21:41:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyLoginWithInvalidCredentials_06_41_2017_09_41_25.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyLoginWithInvalidCredentials_06_41_2017_09_41_25.png' height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials@3a82f6ef]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-06T21:41:26Z" finished-at="2017-09-06T21:41:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInvalidCredentials status=SUCCESS method=TC001_VerifyLoginWithInvalidCredentials.verifyLoginWithInvalidCredentials()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials@3a82f6ef] output=<a href='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyLoginWithInvalidCredentials_06_41_2017_09_41_25.png'> <img src='C:\git\MyFramework\my-automation-project\src\main\java\com\test\automation\uiAutomation\success_screenshots\verifyLoginWithInvalidCredentials_06_41_2017_09_41_25.png' height='100' width='100'/></a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials@3a82f6ef]" name="endTest" is-config="true" duration-ms="1262" started-at="2017-09-06T21:41:26Z" finished-at="2017-09-06T21:41:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

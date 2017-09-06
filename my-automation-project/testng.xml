@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="classes">
-<listeners>
-<listener class-name="com.test.automation.uiAutomation.customListener.Listener"></listener>
-<listener class-name="com.test.automation.uiAutomation.customListener.RetryListener"></listener>
+<suite name="Suite" >
+	<listeners>
+		<listener class-name="com.test.automation.uiAutomation.customListener.Listener"></listener>
+		<listener
+			class-name="com.test.automation.uiAutomation.customListener.RetryListener"></listener>
 
-</listeners>
-  <test name="Test" preserve-order="false">
-    <classes>
-     
-      <class name="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart"/>
-     
-    </classes>
-  </test>
+	</listeners>
+	<test name="Test" preserve-order="true">
+		<classes>
+
+			<class
+				name="com.test.automation.uiAutomation.addToCart.TC005_VerifyAddToCart" />
+			<class
+				name="com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials" />
+			<class
+				name="com.test.automation.uiAutomation.homepage.TC004_VerifyNavigationPage" />
+
+
+		</classes>
+	</test>
 </suite>
